@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
         <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
           <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
             <h1><a>Projektfinder</a></h1>
@@ -17,8 +16,16 @@
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <span class="padding-bottom--15">Log In</span>
+                <span class="padding-bottom--15">Sign Up</span>
                 <form id="stripe-login">
+                    <div class="field padding-bottom--24">
+                        <label for="name">Name</label>
+                        <input type="name" name="name">
+                      </div>
+                      <div class="field padding-bottom--24">
+                        <label for="vorname">Vorname</label>
+                        <input type="vorname" name="vorname">
+                      </div>
                   <div class="field padding-bottom--24">
                     <label for="email">Email</label>
                     <input type="email" name="email">
@@ -40,10 +47,10 @@
               </div>
             </div>
             <div class="footer-link padding-top--24">
-              <span>Don't have an account? <a href="signup.html">Sign up</a></span>
+              <span>Already have an Account? <a href="index.html">Login</a></span>
               <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
                 <span><a href="#">© SBW Neue Medien</a></span>
-                <span><a href="#">Kontakt</a></span>
+                <span><a href="https://www.sbw-media.ch/deutsch/kontakt/index.html">Kontakt</a></span>
               </div>
             </div>
           </div>
