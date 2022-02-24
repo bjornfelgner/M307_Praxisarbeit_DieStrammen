@@ -223,4 +223,10 @@
     }
   } 
 
-  
+  .services-section .service-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 50px 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
