@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/autosave-form.js" defer></script>
     <title>Projektformular</title>
     <link rel="icon" type="image/x-icon" href="/img/sbwneuemedien.svg">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     
 </head>
 <body>
@@ -53,3 +54,33 @@
     </div>
   </body>
 </html>
+
+
+<script>
+var nameElement = document.getElementById('name');
+nameElement.onchange = testName;
+
+function testName() {
+	if(nameElement.value.length < 3) {
+		nameElement.classList.add('warning');
+	} else {
+		nameElement.classList.remove('warning');
+	}
+}
+
+var emailElement = document.getElementById('email');
+emailElement.onchange = testEmail;
+
+function testEmail() {
+	if( isEmailValid(emailElement.value) ) {
+		emailElement.classList.remove('warning');
+	} else {
+		emailElement.classList.add('warning');
+	}
+}
+const isEmailValid = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+};
+
+</script>
