@@ -23,7 +23,7 @@ let AutoSave = ((function () {
 		console.log("saving");
 
 		var form = getForm();
-		var formData = new FormData(form);
+		var formData = new FormData("#mainForm");
 		var Data = JSON.stringify(Object.fromEntries(formData));
 
 		localStorage.setItem("AUTOSAVE_" + document.location, Data);
