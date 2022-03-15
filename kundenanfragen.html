@@ -20,8 +20,7 @@
           <div class="formbg">
             <div class="formbg-inner padding-horizontal--48">
               <span class="padding-bottom--15">Formular</span>
-              <form id="kundenForm">
-
+              <form id="kundenForm" method="POST" action="save.php">
                   <div class="field padding-bottom--24">
                       <label for="kundenname">Kundenname</label>
                       <input type="kundenname" name="kundenname">
@@ -33,15 +32,15 @@
 
                 <div class="field padding-bottom--24">
                   <label for="email">Email</label>
-                  <input type="email" name="email">
+                  <input type="email" name="email_kunde">
                 </div>
 
                 <div class="field padding-bottom--24">
                   <div class="grid--50-50">
-                    <label for="password">Projektart
+                    <label for="projektart">Projektart
                     </label>
                   </div>
-                  <input type="password" name="password">
+                  <input type="projektart" name="projektart">
                 </div>
 
                 <div class="field padding-bottom--24">
@@ -63,7 +62,7 @@
                 <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                 </div>
                 <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Kundenanfrage erfassen" formaction="success.html">
+                  <input type="submit" name="submit" value="kundeanfrage" formaction="success.html">
                 </div>
                 
               </form>

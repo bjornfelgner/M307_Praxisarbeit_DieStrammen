@@ -46,5 +46,5 @@ function _log( string $mess, int $level = info ): void{
 }
 
 _log('connect',4);
-$db = new \PDO("mysql:dbname=test", 'test', 'test',
+$db = new \PDO("mysql:dbname=m307", 'root', '',
   [\PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC]);
