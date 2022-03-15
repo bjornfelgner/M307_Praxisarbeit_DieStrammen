@@ -2,26 +2,28 @@
 require_once './inc/util.php';
 _log('try to save', info);
 print_r( $_POST );
+/*
+$mail = $_GET['email'];
+$name = $_GET['name'];
+$vorname = $_GET['vorname'];
+$passwort = $_GET['password'];
 
-$mail = $_POST['email'];
-$name = $_POST['name'];
-$vorname = $_POST['vorname'];
-$passwort = $_POST['password'];
+$kundenname = $_GET['kundenname'];
+$firma = $_GET['firma'];
+$mail_kunde = $_GET['email_kunde'];
+$projektart = $_GET['projektart'];
+$projektstart = $_GET['projektstart'];
+$projektnummer = $_GET['projektnummer'];
+*/
 
-$kundenname = $_POST['kundenname'];
-$firma = $_POST['firma'];
-$mail_kunde = $_POST['email_kunde'];
-$projektart = $_POST['projektart'];
-$projektstart = $_POST['projektstart'];
-$projektnummer = $_POST['projektnummer'];
 
-if(isset($_POST['submit'])){
-    echo $kundenname = $_POST['kundenname'];
-    echo $firma = $_POST['firma'];
-    echo $mail_kunde = $_POST['email_kunde'];
-    echo $projektart = $_POST['projektart'];
-    echo $projektstart = $_POST['projektstart'];
-    echo $projektnummer = $_POST['projektnummer'];
+if(isset($_POST['kundeanfrage'])){
+    echo $kundenname = $_GET['kundenname'];
+    echo $firma = $_GET['firma'];
+    echo $mail_kunde = $_GET['email_kunde'];
+    echo $projektart = $_GET['projektart'];
+    echo $projektstart = $_GET['projektstart'];
+    echo $projektnummer = $_GET['projektnummer'];
 }
 
 ?>
